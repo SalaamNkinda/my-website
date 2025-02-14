@@ -33,6 +33,18 @@ nav a:hover {
     color: #000;
 }
 
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Ensure links stay in a row */
+        justify-content: space-around; /* Spread out the links */
+        font-size: 14px; /* Adjust font size if needed */
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
+
 /* Container */
 .container {
     width: 80%;
