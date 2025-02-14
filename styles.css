@@ -10,10 +10,14 @@ body {
 /* Navigation Bar */
 nav {
     background-color: #000;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the nav items */
+    align-items: center; /* Vertically center the nav items */
     text-align: center;
     padding: 15px;
     transition: background 0.5s ease-in-out;
     position: relative;
+    width: 100%;
 }
 
 nav:hover {
@@ -33,17 +37,19 @@ nav a:hover {
     color: #000;
 }
 
+/* For small screens (mobile) */
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: row; /* Ensure links stay in a row */
         justify-content: space-around; /* Spread out the links */
-        font-size: 14px; /* Adjust font size if needed */
+        font-size: 14px; /* Adjust font size */
     }
 
     nav a {
         padding: 10px;
     }
 }
+
 
 /* Container */
 .container {
