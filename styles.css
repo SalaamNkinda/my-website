@@ -41,12 +41,14 @@ nav a:hover {
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: row; /* Ensure links stay in a row */
-        justify-content: space-around; /* Spread out the links */
+        justify-content: space-evenly; /* Spread out the links */
         font-size: 14px; /* Adjust font size */
+        padding: 10px 15px;
     }
 
     nav a {
-        padding: 10px;
+        padding: 5px 15px;
+        font-size: 16px;
     }
 }
 
