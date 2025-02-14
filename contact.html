@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2 class="subtitle">Contact Me</h2>
+        <p>Email: <a href="mailto:snkinda05@gmail.com">snkinda05@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/salaam-nkinda" target="_blank">@salaam-nkinda</a></p>
+
+        <h3 class="subtitle">Send a Message</h3>
+        <form action="send-email.php" method="POST">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <p class="subtitle">Connect with me:</p>
+        <a href="https://www.linkedin.com/in/salaam-nkinda" target="_blank" rel="noopener noreferrer">
+            <img src="images/linkedin.png" alt="LinkedIn" width="30">
+        </a>
+        
+        <a href="mailto:snkinda05@gmail.com">
+            <img src="images/email.png" alt="Email" width="30">
+        </a>
+    </footer>
+    
+</body>
+</html>

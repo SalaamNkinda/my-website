@@ -1,0 +1,347 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    transition: background 0.5s ease-in-out;
+    position: relative;
+}
+
+nav:hover {
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #2a4930 10%, #000 80%);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Home Page Layout */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+    max-width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+/* Image Section - Resized */
+.image-container {
+    width: 40%; /* Adjusted to make the image smaller */
+    max-height: 60vh;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Bio Section - Takes majority of the page */
+.bio-container {
+    width: 60%; /* Adjusted to take more space */
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.bio-container h1 {
+    color: #2a4930;
+}
+
+.bio-container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* New Skills Section */
+.skills-container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.skills-container h2 {
+    color: #2a4930;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 18px;
+    padding: 8px;
+    background-color: rgba(42, 73, 48, 0.2);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.skills-list li:hover {
+    background-color: rgba(42, 73, 48, 0.5);
+}
+
+/* Make the bio-container and image-container take up more space */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Added to create more space */
+    gap: 30px;
+    max-width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 60px 20px;  /* Increased padding */
+}
+
+/* Image Section - Resize to fill more space */
+.image-container {
+    width: 45%; /* Increased from 40% to 45% */
+    max-height: 75vh; /* Increased max height */
+}
+
+.bio-container {
+    width: 50%; /* Increased from 60% to 50% */
+    max-height: 75vh; /* Increased max height */
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.bio-container h1 {
+    color: #2a4930;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.bio-container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Contact Page */
+.contact-container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #2a4930;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+    color: #2a4930;
+}
+
+.contact-container h2 {
+    color: #2a4930;
+}
+
+/* Gallery Page */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%; 
+    margin: auto;
+}
+/* Gallery Page - Project Layout */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 projects per row */
+    gap: 20px; /* Space between the project boxes */
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.project-box {
+    background-color: rgba(42, 73, 48, 0.2); /* Light background color */
+    border: 2px solid white; /* White border around the box */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the content is spaced evenly */
+}
+
+.project-box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.project-box h2 {
+    color: #2a4930;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-decoration: underline; /* Underline the title */
+}
+
+.project-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Project link */
+.project-box a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-box a:hover {
+    color: #ff6347; /* Color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsiveness - Adjusts to smaller screen sizes */
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 projects per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-container {
+        grid-template-columns: 1fr; /* 1 project per row on mobile */
+    }
+}
+
+/* Resume Section - Resized Image */
+.resume-container {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.resume-container a {
+    background-color: #2a4930;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.resume-container a:hover {
+    background-color: #fff;
+    color: #2a4930;
+}
+
+.resume-container img {
+    width: 100%;
+    max-width: 00px; /* Resizing image */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0; /* Reduced padding */
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin-top: 40px; /* Adds space above the footer */
+}
+
+footer a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #2a4930;
+}
+
+
+.subtitle {
+    color: #2a4930;
+}
+
+/* Form */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background: #333;
+    color: #fff;
+}
+
+form button {
+    background: grey;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #fff;
+    color: #000;
+}
