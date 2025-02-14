@@ -329,16 +329,27 @@ nav a:hover {
 }
 
 .resume-container a {
-    background-color: #2a4930;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    display: inline-block;
     text-decoration: none;
 }
 
-.resume-container a:hover {
-    background-color: #fff;
-    color: #2a4930;
+.download-btn {
+    background-color: transparent;
+    border: 2px solid #2a4930; /* Green border */
+    color: #2a4930; /* Green text */
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none;
+}
+
+/* Hover effect for the button */
+.download-btn:hover {
+    background-color: #2a4930; /* Green background */
+    color: #fff; /* White text */
 }
 
 .resume-container img {
@@ -346,6 +357,26 @@ nav a:hover {
     max-width: 1000px; /* Adjusting image size */
     height: auto;
     margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #2a4930;
 }
 
 /* Footer */
