@@ -68,12 +68,12 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px; /* Reduced gap between sections */
     max-width: 90%; /* Adjusted max-width for responsiveness */
     margin: auto;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
-    padding: 60px 20px;
+    padding: 40px 20px; /* Reduced padding */
     box-sizing: border-box;
 }
 
@@ -96,7 +96,7 @@ nav a:hover {
     width: 50%;
     max-height: 75vh;
     overflow-y: auto;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     box-sizing: border-box;
 }
 
@@ -114,8 +114,9 @@ nav a:hover {
 /* Skills Section */
 .skills-container {
     width: 90%;
-    margin: 40px auto;
+    margin: 20px auto; /* Reduced margin */
     text-align: center;
+    padding: 10px 5%; /* Reduced padding */
 }
 
 .skills-container h2 {
@@ -145,18 +146,19 @@ nav a:hover {
     .home-container {
         flex-direction: column;
         text-align: center;
-        padding: 40px 20px;
+        padding: 20px 20px; /* Reduced padding */
+        gap: 15px; /* Reduced gap between sections */
     }
 
     .image-container {
         width: 80%; /* Adjusted width for mobile */
         max-height: 60vh;
-        margin-bottom: 20px;
+        margin-bottom: 10px; /* Reduced bottom margin */
     }
 
     .bio-container {
         width: 80%; /* Adjusted width for mobile */
-        padding: 20px;
+        padding: 15px; /* Reduced padding */
     }
 
     .bio-container h1 {
@@ -165,6 +167,36 @@ nav a:hover {
 
     .bio-container p {
         font-size: 16px;
+    }
+
+    .skills-container {
+        margin: 20px auto; /* Reduced margin */
+        padding: 10px 5%; /* Reduced padding */
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 projects per row on smaller screens */
+        gap: 15px; /* Reduced gap */
+        padding: 15px; /* Reduced padding */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-container {
+        grid-template-columns: 1fr; /* 1 project per row on mobile */
+        gap: 10px; /* Further reduced gap */
+    }
+    
+    .home-container {
+        gap: 10px; /* Further reduced gap between sections */
+    }
+    
+    .image-container {
+        margin-bottom: 10px; /* Reduced bottom margin */
+    }
+    
+    .bio-container {
+        padding: 10px; /* Reduced padding */
     }
 }
 
@@ -339,4 +371,4 @@ footer a:hover {
 /* Form */
 form input, form textarea {
     width: 100%;
-  
+}
