@@ -138,10 +138,6 @@ nav a:hover {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.skills-list li:hover {
-    transform: scale(1.05); 
-    background-color: rgba(42, 73, 48, 0.5); 
-}
 
 
 /* For mobile screens */
@@ -211,11 +207,13 @@ nav a:hover {
     padding: 20px;
 }
 
+/* Contact Form */
 .contact-form {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(42, 73, 48, 0.8);  /* Darker background with transparency */
     padding: 20px;
     border-radius: 10px;
 }
+
 
 .contact-form input,
 .contact-form textarea {
