@@ -1,6 +1,0 @@
-<script>start("/Users/Sal/Salaam website/images/");</script>
-<script>onHasParentDirectory();</script>
-<script>addRow("email.png","email.png",0,4062,"4.0 kB",1739514036,"14/02/2025, 10:20:36");</script>
-<script>addRow("linkedin.png","linkedin.png",0,1827,"1.8 kB",1739513968,"14/02/2025, 10:19:28");</script>
-<script>addRow("my_image.png","my_image.png",0,1286323,"1.2 MB",1739519850,"14/02/2025, 11:57:30");</script>
-<script>addRow("resume-image.jpg","resume-image.jpg",0,138495,"135 kB",1739514372,"14/02/2025, 10:26:12");</script>
