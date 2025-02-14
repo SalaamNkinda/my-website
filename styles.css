@@ -135,10 +135,7 @@ nav a:hover {
     background-color: rgba(42, 73, 48, 0.2);
     margin: 10px 0;
     border-radius: 5px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
-
 
 /* For mobile screens */
 @media screen and (max-width: 768px) {
