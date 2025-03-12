@@ -12,4 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     console.log("Projects page loaded successfully!");
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 7f7c335 (Update Css)
