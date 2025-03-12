@@ -480,11 +480,6 @@ form input, form textarea {
     }
 }
 
-/* Lazy Loading for Images */
-img {
-    loading: lazy;
-}
-
 /* Accessibility Improvements */
 button, a {
     outline: none; /* Remove default outline */
