@@ -421,10 +421,6 @@ footer a:hover {
 form input, form textarea {
     width: 100%;
 }
-<<<<<<< HEAD
-=======
-
-/* Additions for Better Responsiveness and Functionality */
 
 /* General Responsiveness Adjustments */
 @media screen and (max-width: 768px) {
@@ -602,4 +598,3 @@ nav:hover {
 .project-box:nth-child(9) {
     animation-delay: 0.9s;
 }
->>>>>>> 7f7c335 (Update Css)
